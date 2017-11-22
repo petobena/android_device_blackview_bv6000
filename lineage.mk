@@ -12,21 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/elephone/p9000/full_p9000.mk)
+$(call inherit-product, device/blackview/bv6000/full_bv6000.mk)
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := lineage_p9000
-BOARD_VENDOR := elephone
-PRODUCT_DEVICE := p9000
+PRODUCT_NAME := lineage_bv6000
+BOARD_VENDOR := blackview
+PRODUCT_DEVICE := bv6000
 
-PRODUCT_GMS_CLIENTID_BASE := android-elephone
+PRODUCT_GMS_CLIENTID_BASE := android-blackview
 
-PRODUCT_MANUFACTURER := Elephone
-PRODUCT_MODEL := Elephone P9000
+PRODUCT_MANUFACTURER := Blackview
+PRODUCT_MODEL := Blackview BV6000
 
-PRODUCT_BRAND := Elephone
-TARGET_VENDOR := elephone
-TARGET_VENDOR_PRODUCT_NAME := P9000
-TARGET_VENDOR_DEVICE_NAME := p9000
+PRODUCT_BRAND := Blackview
+TARGET_VENDOR := blackview
+TARGET_VENDOR_PRODUCT_NAME := BV6000
+TARGET_VENDOR_DEVICE_NAME := bv6000
