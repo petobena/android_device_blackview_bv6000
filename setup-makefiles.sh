@@ -1,7 +1,7 @@
 #!/bin/bash
 
-VENDOR=elephone
-DEVICE=p9000
+VENDOR=blackview
+DEVICE=bv6000
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
