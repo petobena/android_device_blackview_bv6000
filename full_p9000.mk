@@ -15,8 +15,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from p9000
-$(call inherit-product, device/elephone/p9000/device.mk)
+# Inherit from bv6000
+$(call inherit-product, device/blackview/bv6000/device.mk)
 
 # Keyhandler package
 PRODUCT_PACKAGES += \
@@ -27,8 +27,8 @@ PRODUCT_SYSTEM_SERVER_JARS += com.cyanogenmod.keyhandler
 # Never dexopt the keyhandler
 $(call add-product-dex-preopt-module-config,com.cyanogenmod.keyhandler,disable)
 
-PRODUCT_DEVICE := p9000
-PRODUCT_NAME := full_p9000
-PRODUCT_BRAND := elephone
-PRODUCT_MODEL := p9000
-PRODUCT_MANUFACTURER := elephone
+PRODUCT_DEVICE := bv6000
+PRODUCT_NAME := full_bv6000
+PRODUCT_BRAND := blackview
+PRODUCT_MODEL := bv6000
+PRODUCT_MANUFACTURER := blackview
