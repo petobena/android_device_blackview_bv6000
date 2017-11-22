@@ -15,7 +15,7 @@
 
 TARGET_BOARD_PLATFORM := mt6755
 
-DEVICE_PATH := device/elephone/p9000
+DEVICE_PATH := device/blackview/bv6000
 
 # Disable NINJA
 #USE_NINJA := false
@@ -44,10 +44,10 @@ BOARD_MKBOOTIMG_ARGS := --board 1465391499 --ramdisk_offset 0x04f88000 --second_
 # Kernel properties
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_SOURCE := kernel/elephone/p9000
-TARGET_KERNEL_CONFIG := flexy_p9000_defconfig
+TARGET_KERNEL_SOURCE := kernel/blackview/bv6000
+TARGET_KERNEL_CONFIG := flexy_bv6000_defconfig
 
-TARGET_BOOTLOADER_BOARD_NAME := p9000
+TARGET_BOOTLOADER_BOARD_NAME := bv6000
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
