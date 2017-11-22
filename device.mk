@@ -13,10 +13,10 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/elephone/p9000/p9000-vendor.mk
+VENDOR_BLOBS ?= vendor/blackview/bv6000/bv6000-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
-MTK_PROJECT_CONFIG ?= device/elephone/p9000/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= device/blackview/bv6000/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
 # Camera
@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/camerasize.xml:system/etc/camerasize.xml
 
 # Recovery allowed devices
-TARGET_OTA_ASSERT_DEVICE := p9000,P9000,elephone,Elephone,c239v55_dx
+TARGET_OTA_ASSERT_DEVICE := bv6000,BV6000,blackview,Blackview,c239v55_dx
 
 # Charger and USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -168,12 +168,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    fingerprintd
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # GPS
 PRODUCT_PACKAGES += \
